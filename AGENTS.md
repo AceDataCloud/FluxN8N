@@ -1,0 +1,3 @@
+# FluxN8N
+
+Independent n8n community node for AceDataCloud Flux images. Use Node.js 24, pnpm 11, `pnpm install --frozen-lockfile`, `pnpm run build`, `pnpm run lint`, and `pnpm test`. Keep one service per package, no external runtime dependencies, masked credentials, and n8n authenticated request helpers. Runtime code must not read files or environment variables. Image creation is asynchronous and never retried automatically; task queries reuse the original ID. Validate model-specific size rules before charging. Submit code through PRs under Ace Data Cloud Dev. Do not add video actions until their independent live path and pricing are verified.

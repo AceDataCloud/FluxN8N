@@ -1,0 +1,49 @@
+{
+  "tested_at": "2026-10-09 11:20 Asia/Shanghai",
+  "environment": "self-hosted n8n 2.42.3 with the local built package",
+  "workflow": "Flux image quickstart by AceDataCloud",
+  "execution_id": "1",
+  "execution_status": "succeeded",
+  "creation_requests": 1,
+  "model": "flux-dev",
+  "size": "1024x1024",
+  "task_id": "7047a12b-d371-4544-b527-bda4569efb61",
+  "task_status": "succeeded",
+  "result_url": "https://platform2.cdn.acedata.cloud/flux/7047a12b-d371-4544-b527-bda4569efb61.png",
+  "media": { "http_status": 200, "content_type": "image/png", "width": 1024, "height": 1024, "bytes": 692313, "sha256": "fa4978ec1ff8ecd096f73c75aa89605e7a12e522ad32cba5865404688122fa62" },
+  "reported_cost": { "amount": 0.216, "currency": "credit" },
+  "billing_readback": {
+    "usage_id": "bee7e769-228f-40cd-8c56-65900d8d0ba2",
+    "trace_id": "7f60bbf7-6f9b-4e95-8cff-e2773b3964b6",
+    "status_code": 200,
+    "deducted_amount": 0.216,
+    "created_at": "2026-10-09T03:20:55.217535Z",
+    "test_key_matched_usage_credential": true
+  },
+  "edit_validation": {
+    "tested_at": "2026-10-09 11:29 Asia/Shanghai",
+    "workflow": "Flux image editing with task query by AceDataCloud",
+    "execution_id": "2",
+    "execution_status": "succeeded",
+    "creation_requests": 1,
+    "model": "flux-kontext-pro",
+    "size": "1:1",
+    "reference_url": "https://platform2.cdn.acedata.cloud/flux/7047a12b-d371-4544-b527-bda4569efb61.png",
+    "task_id": "b65a740f-eb48-49e3-b10b-6d119b59d992",
+    "task_status": "succeeded",
+    "result_url": "https://platform2.cdn.acedata.cloud/flux/b65a740f-eb48-49e3-b10b-6d119b59d992.png",
+    "media": { "http_status": 200, "content_type": "image/png", "width": 1024, "height": 1024, "bytes": 843949, "sha256": "6ba257f14b7f2cda0a58eebf982b88a062d9c3b1faedf05c333a48cb1b5080d5" },
+    "reported_cost": { "amount": 0.423, "currency": "credit" },
+    "billing_readback": {
+      "usage_id": "dafe4e4a-d016-4e8c-bae2-6341bdf00e92",
+      "trace_id": "ccba40c0-2136-4808-b571-cdd90ee3f6a4",
+      "status_code": 200,
+      "deducted_amount": 0.423,
+      "created_at": "2026-10-09T03:29:19.606234Z",
+      "test_key_matched_usage_credential": true
+    },
+    "screenshots": ["../_assets/tutorial/08-edit-config.png", "../_assets/tutorial/09-edit-task-id.png", "../_assets/tutorial/10-edit-execution.png", "../_assets/tutorial/11-edit-result.png"]
+  },
+  "screenshots": ["../_assets/tutorial/05-task-id.png", "../_assets/tutorial/06-execution.png", "../_assets/tutorial/07-result.png"],
+  "scope_note": "One local n8n image generation and one distinct edit both reached successful terminal tasks with separate matching bills. npm installation, video and n8n Cloud verification are separate gates."
+}
