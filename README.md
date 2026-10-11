@@ -2,7 +2,7 @@
 
 Generate one Flux image and retrieve its completed result in an n8n workflow through AceDataCloud. Screenshots use a real self-hosted n8n 2.42.3 instance in English. This package is maintained by Ace Data Cloud.
 
-**Package:** `@acedatacloud/n8n-nodes-flux` · [Flux image API](https://platform.acedata.cloud/documents/6b9197c5-7a3f-4878-a43f-7f94e7e66394) · [Current models and pricing](https://platform.acedata.cloud/models) · [Source](https://github.com/AceDataCloud/FluxN8N)
+**Package:** `@acedatacloud/n8n-nodes-flux` · [Flux image API](https://platform.acedata.cloud/documents/6b9197c5-7a3f-4878-a43f-7f94e7e66394?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxn8n_readme_documents_6b9197c5_7a3f_4878_a43f_7f94e7e66394) · [Current models and pricing](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxn8n_readme_pricing) · [Source](https://github.com/AceDataCloud/FluxN8N)
 
 ## 1. Install the node
 
@@ -14,7 +14,9 @@ n8n Cloud offers a community node in the node picker only after n8n verifies it.
 
 ## 2. Get an API key with Flux access
 
-1. Sign in at [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications).
+New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+
+1. Sign in at [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxn8n_readme_api_key).
 2. Open **General application**. Copy its API key or choose **Manage Keys → Create** for a separate n8n key.
 3. Check Flux service access, current pricing and balance. If **Allowed APIs** is enabled, include both `/flux/images` and `/flux/tasks`.
 
@@ -73,7 +75,7 @@ Open **Get Task** output. Continue only when `status=succeeded`, `finished=true`
 
 ![Actual generated Flux image](https://platform2.cdn.acedata.cloud/flux/7047a12b-d371-4544-b527-bda4569efb61.png)
 
-The result reported **0.216 Credits**, and read-only Ace Data Cloud usage history showed one matching HTTP 200 record for the same test key and trace ID. Credits are not USD; the current package rate determines conversion. Your charge can differ by model, size, account and current price. Use the [Ace Data Cloud console](https://platform.acedata.cloud/console) to inspect the matching usage record.
+The result reported **0.216 Credits**, and read-only Ace Data Cloud usage history showed one matching HTTP 200 record for the same test key and trace ID. Credits are not USD; the current package rate determines conversion. Your charge can differ by model, size, account and current price. Use the [Ace Data Cloud console](https://platform.acedata.cloud/console?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxn8n_readme_console) to inspect the matching usage record.
 
 If Get Task still says `processing` after 30 seconds, **do not rerun this workflow**: that would submit a second paid image. Copy the original task ID, import the [query-only workflow](https://github.com/AceDataCloud/FluxN8N/raw/refs/heads/main/examples/query-existing-task.json), replace its placeholder task ID, assign the same credential and run only that workflow until the task reaches a terminal state. The [bounded polling example](https://github.com/AceDataCloud/FluxN8N/raw/refs/heads/main/examples/generate-and-wait.json) automates queries of one task for up to 30 minutes without resubmitting Create. Reaching its deadline does not cancel a submitted task.
 
