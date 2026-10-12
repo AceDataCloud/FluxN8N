@@ -1,6 +1,6 @@
 {
   "name": "@acedatacloud/n8n-nodes-flux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate and edit Flux images and retrieve their tasks in n8n through AceDataCloud.",
   "license": "MIT",
   "homepage": "https://github.com/AceDataCloud/FluxN8N",
