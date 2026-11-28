@@ -192,12 +192,12 @@ async function request(context: IExecuteFunctions, endpoint: string, body: IData
 
 export class Flux implements INodeType {
   description: INodeTypeDescription = {
-    displayName: 'Flux by AceDataCloud', name: 'flux',
+    displayName: 'Flux', name: 'flux',
     icon: { light: 'file:icon.svg', dark: 'file:icon.dark.svg' },
     group: ['transform'], version: 1,
     subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
     description: 'Generate or edit Flux images and query the same task until it finishes',
-    defaults: { name: 'Flux by AceDataCloud' },
+    defaults: { name: 'Flux' },
     inputs: [NodeConnectionTypes.Main], outputs: [NodeConnectionTypes.Main],
     usableAsTool: true, credentials: [{ name: 'aceDataFluxApi', required: true }], properties,
   };
@@ -210,7 +210,7 @@ export class Flux implements INodeType {
           const credentials = await this.getCredentials('aceDataFluxApi');
           if (typeof credentials.apiToken !== 'string' || !credentials.apiToken.trim())
             throw new UserError('Missing API token');
-        } catch { throw new NodeOperationError(this.getNode(), 'A Flux by AceDataCloud credential is required.'); }
+        } catch { throw new NodeOperationError(this.getNode(), 'A Flux credential is required.'); }
 
         const resource = this.getNodeParameter('resource', index) as string;
         const operation = this.getNodeParameter('operation', index) as string;

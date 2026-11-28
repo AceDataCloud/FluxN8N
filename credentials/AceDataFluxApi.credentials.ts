@@ -2,7 +2,7 @@ import type { IAuthenticateGeneric, ICredentialTestRequest, ICredentialType, INo
 
 export class AceDataFluxApi implements ICredentialType {
   name = 'aceDataFluxApi';
-  displayName = 'Flux by AceDataCloud API';
+  displayName = 'Flux API';
   documentationUrl = 'https://github.com/AceDataCloud/FluxN8N#credentials';
   icon = 'file:../nodes/Flux/icon.svg' as const;
   properties: INodeProperties[] = [
