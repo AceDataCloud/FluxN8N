@@ -30,7 +30,7 @@ Copy only the API token. Do not include `Bearer `, quotes or a platform manageme
 
 ## 3. Save the credential in n8n
 
-Add **Flux by AceDataCloud** to a workflow. In **Credential**, select **Connect to Flux by AceDataCloud** and then **Create new credential**. Paste the token into **API Token**. Set **Allowed HTTP Request Domains** to **Specific Domains** and enter `api.acedata.cloud`, then save. Select the same credential on both **Create** and **Get Task**.
+Add **Flux** to a workflow. In **Credential**, select **Connect to Flux** and then **Create new credential**. Paste the token into **API Token**. Set **Allowed HTTP Request Domains** to **Specific Domains** and enter `api.acedata.cloud`, then save. Select the same credential on both **Create** and **Get Task**.
 
 ![Create the masked Flux credential](https://raw.githubusercontent.com/AceDataCloud/FluxN8N/main/_assets/tutorial/02-credential.png)
 
